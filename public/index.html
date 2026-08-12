@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book time with Ananya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <div class="topbar">
+            <div>
+                <h1 id="hostName">Book a time</h1>
+                <p class="muted" id="hostHours"></p>
+            </div>
+            <a href="/dashboard.html">Host dashboard</a>
+        </div>
+
+        <div class="card">
+            <h2>Pick a slot</h2>
+            <div class="row">
+                <div class="field">
+                    <label for="eventType">Event type</label>
+                    <select id="eventType"></select>
+                </div>
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+            <p class="muted" id="eventMeta"></p>
+        </div>
+
+        <div class="card">
+            <h2>Available times</h2>
+            <div class="slots" id="slots"></div>
+            <p class="muted" id="slotsEmpty" style="display:none">No times left on this date.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your details</h2>
+            <div class="row">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Rohit Menon">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="rohit@example.com">
+                </div>
+            </div>
+            <p class="muted" id="selected">No time selected yet.</p>
+            <button class="primary" id="book">Confirm booking</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

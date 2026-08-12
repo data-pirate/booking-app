@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Host dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <div class="topbar">
+            <h1>Dashboard</h1>
+            <a href="/">Booking page</a>
+        </div>
+
+        <div class="card">
+            <h2>Working hours</h2>
+            <div id="hours"></div>
+        </div>
+
+        <div class="card">
+            <h2>Event types</h2>
+            <div id="eventTypes"></div>
+        </div>
+
+        <div class="card">
+            <h2>Upcoming bookings</h2>
+            <div id="bookings"></div>
+            <p class="muted" id="bookingsEmpty" style="display:none">Nothing booked yet.</p>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

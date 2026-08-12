@@ -1,0 +1,17 @@
+{
+    "name": "booking-app",
+    "version": "0.1.0",
+    "description": "Scheduling and booking app",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "mocha test/**/*.test.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    },
+    "devDependencies": {
+        "chai": "^4.4.1",
+        "mocha": "^10.4.0"
+    }
+}
